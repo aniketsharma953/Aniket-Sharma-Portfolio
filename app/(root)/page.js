@@ -90,9 +90,9 @@ export default function HomePage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <a href={project.link}>
+              <Link key={index} href={project.link}>
               <div
-                key={index}
+                
                 className="bg-[#1F1F1F] rounded-xl p-6 border border-[#292A2B] hover:border-[#7942C0]/50 transition-all group overflow-hidden"
               >
                 <div className="mb-4 h-48 bg-[#292A2B] rounded-lg overflow-hidden">
@@ -115,7 +115,7 @@ export default function HomePage() {
                   ))}
                 </div>
               </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
