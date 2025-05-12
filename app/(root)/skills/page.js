@@ -80,7 +80,7 @@ export default function SkillsPage() {
             Continuous <span className="text-[#7942C0]">Learning</span>
           </h2>
           <p className="text-[#D1D1D1] leading-relaxed">
-            I'm constantly expanding my skill set and staying updated with the
+            I&apos;m constantly expanding my skill set and staying updated with the
             latest web technologies. Currently exploring advanced Next.js
             features and TypeScript to build more robust applications.
           </p>
