@@ -58,8 +58,8 @@ export default function ProjectsPage() {
       description: "My first portfolio website design",
       tags: ["React", "Next.js", "Tailwind CSS"],
       image: "/portfolio.png",
-      link: "https://portfolio-v1-demo.com",
-      github: "https://github.com/yourusername/portfolio-v1",
+      link: "https://aniket-sharma-portfolio-orpin.vercel.app/",
+      github: "https://github.com/aniketsharma953/Aniket-Sharma-Portfolio",
     },
   ];
 
