@@ -41,7 +41,7 @@ export default function HomePage() {
               <h1
                 className={`${outfit.className} text-5xl md:text-6xl font-bold mb-6`}
               >
-                Hi, I'm <span className="text-[#7942C0]">Aniket</span>
+                Hi, I&apos;m <span className="text-[#7942C0]">Aniket</span>
               </h1>
               <h2
                 className={`${outfit.className} text-2xl md:text-3xl text-[#D1D1D1] mb-8`}
