@@ -222,7 +222,7 @@ export default function ContactPage() {
                   </svg>
                 </a>
                 <a 
-                  href="https://x.com/yourusername" 
+                  href="https://x.com/@AniketS39306951" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-[#292A2B] rounded-lg hover:bg-[#000000]/20 transition-colors"
