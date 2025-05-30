@@ -148,7 +148,7 @@ export default function SideNav() {
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3">
                     <img
-                      src={`/${item.icon}.png`}
+                      src={`/${item.icon}.webp`}
                       alt={item.icon}
                       className="h-5 w-5"
                     />
