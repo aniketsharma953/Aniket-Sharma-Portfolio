@@ -19,10 +19,10 @@ export default function SideNav() {
     checkMobile();
 
     // Add event listener
-    window.addEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
 
     // Cleanup
-    return () => window.removeEventListener('resize', checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const navItems = [
@@ -48,13 +48,11 @@ export default function SideNav() {
                 href={item.path}
                 key={item.path}
                 className={`flex flex-col items-center p-2 rounded-lg transition-all duration-300 ${
-                  isActive(item.path)
-                    ? "bg-purple-600"
-                    : "hover:bg-[#292A2B]"
+                  isActive(item.path) ? "bg-purple-600" : "hover:bg-[#292A2B]"
                 }`}
               >
                 <img
-                  src={`/${item.icon}.png`}
+                  src={`/${item.icon}.webp`}
                   alt={item.label}
                   className="h-6 w-6"
                 />
@@ -74,14 +72,17 @@ export default function SideNav() {
           <div className="flex flex-col items-center gap-4 w-full">
             <div className="relative group w-[180px] h-[180px]">
               <img
-                src="/aniket.jpg"
+                src="/aniket.webp"
                 alt="Profile"
+                format="webp"
                 className="w-full h-full rounded-full object-cover border-4 border-[#7942C0] group-hover:border-white transition-all duration-300"
               />
             </div>
 
             <div className="text-center w-full">
-              <h1 className={`${outfit.className} font-bold text-white text-3xl truncate`}>
+              <h1
+                className={`${outfit.className} font-bold text-white text-3xl truncate`}
+              >
                 ANIKET SHARMA
               </h1>
               <p className={`${outfit.className} text-[#D1D1D1] text-xl`}>
@@ -103,7 +104,7 @@ export default function SideNav() {
                 }`}
               >
                 <img
-                  src={`/${item.icon}.png`}
+                  src={`/${item.icon}.webp`}
                   alt={item.label}
                   className="h-6 w-6 transition-all duration-300 group-hover:scale-125"
                 />
@@ -117,15 +118,33 @@ export default function SideNav() {
           {/* Contact Info */}
           <div className="mt-auto w-full">
             <div className="bg-[#292A2B] rounded-2xl p-6 space-y-4">
-              <h3 className={`${outfit.className} text-white font-bold text-lg`}>
+              <h3
+                className={`${outfit.className} text-white font-bold text-lg`}
+              >
                 Contact Info
               </h3>
               <div className="space-y-3">
                 {[
-                  { icon: "contact", text: "+91-7888346624", link: "tel:7888346624" },
-                  { icon: "mail", text: "aniketsharma090503@gmail.com", link: "mailto:aniketsharma090503@gmail.com"},
-                  { icon: "linked", text: "Aniket Sharma", link: "https://in.linkedin.com/in/aniket-sharma-558038252" },
-                  { icon: "git1", text: "aniketsharma953", link: "https://github.com/aniketsharma953" },
+                  {
+                    icon: "contact",
+                    text: "+91-7888346624",
+                    link: "tel:7888346624",
+                  },
+                  {
+                    icon: "mail",
+                    text: "aniketsharma090503@gmail.com",
+                    link: "mailto:aniketsharma090503@gmail.com",
+                  },
+                  {
+                    icon: "linked",
+                    text: "Aniket Sharma",
+                    link: "https://in.linkedin.com/in/aniket-sharma-558038252",
+                  },
+                  {
+                    icon: "git1",
+                    text: "aniketsharma953",
+                    link: "https://github.com/aniketsharma953",
+                  },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3">
                     <img
@@ -134,11 +153,18 @@ export default function SideNav() {
                       className="h-5 w-5"
                     />
                     {item.link ? (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-white text-sm truncate hover:underline">
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white text-sm truncate hover:underline"
+                      >
                         {item.text}
                       </a>
                     ) : (
-                      <span className="text-white text-sm truncate">{item.text}</span>
+                      <span className="text-white text-sm truncate">
+                        {item.text}
+                      </span>
                     )}
                   </div>
                 ))}

@@ -5,20 +5,19 @@ import { Outfit } from "next/font/google";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 
 const skills = [
-  { name: "HTML5", level: 95, icon: "/html5.png" },
-  { name: "CSS3", level: 90, icon: "/css3.png" },
-  { name: "JavaScript", level: 85, icon: "/javascript.png" },
-  { name: "React.js", level: 88, icon: "/react.png" },
-  { name: "Next.js", level: 83, icon: "/next.png" },
-  { name: "Tailwind CSS", level: 87, icon: "/tailwind.png" },
-  { name: "Bootstrap", level: 80, icon: "/bootstrap.png" },
-  { name: "Git", level: 78, icon: "/git.png" },
+  { name: "HTML5", level: 95, icon: "/html5.webp" },
+  { name: "CSS3", level: 90, icon: "/css3.webp" },
+  { name: "JavaScript", level: 85, icon: "/javascript.webp" },
+  { name: "React.js", level: 88, icon: "/react.webp" },
+  { name: "Next.js", level: 83, icon: "/next.webp" },
+  { name: "Tailwind CSS", level: 87, icon: "/tailwind.webp" },
+  { name: "Bootstrap", level: 80, icon: "/bootstrap.webp" },
+  { name: "Git", level: 78, icon: "/git.webp" },
 ];
 
 export default function SkillsPage() {
   return (
     <div className="min-h-screen bg-[#141516] text-white p-8 md:p-12">
-      
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -80,8 +79,8 @@ export default function SkillsPage() {
             Continuous <span className="text-[#7942C0]">Learning</span>
           </h2>
           <p className="text-[#D1D1D1] leading-relaxed">
-            I&apos;m constantly expanding my skill set and staying updated with the
-            latest web technologies. Currently exploring advanced Next.js
+            I&apos;m constantly expanding my skill set and staying updated with
+            the latest web technologies. Currently exploring advanced Next.js
             features and TypeScript to build more robust applications.
           </p>
         </div>

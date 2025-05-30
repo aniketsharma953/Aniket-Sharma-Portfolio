@@ -12,43 +12,48 @@ export default function ProjectsPage() {
       title: "Shayar Portfolio",
       description: "A poetry showcase platform with interactive features",
       tags: ["React", "Next.js", "CSS"],
-      image: "/shayari.png",
+      image: "/shayari.webp",
       link: "https://www.varunanand.in/",
       github: "https://github.com/Anmolashish/Varun-Anand-s-website.git",
     },
     {
       id: 2,
       title: "Your-Lie-In-April",
-      description: "An interactive anime music experience page created during the Hakatahon task.",
+      description:
+        "An interactive anime music experience page created during the Hakatahon task.",
       tags: ["React", "Next.js", "Tailwind CSS"],
-      image: "/your-lie-april.png",
+      image: "/your-lie-april.webp",
       link: "https://your-lie-in-april.vercel.app/",
       github: "https://github.com/Anmolashish/Your-lie-in-april.git",
     },
     {
       id: 3,
       title: "Season-Based-Anime",
-      description: "A project built as the second task during the Hakatahon, offering anime suggestions based on seasonal themes.",
+      description:
+        "A project built as the second task during the Hakatahon, offering anime suggestions based on seasonal themes.",
       tags: ["React", "Next.js", "Tailwind CSS"],
-      image: "/season.png",
+      image: "/season.webp",
       link: "https://season-based-anime-recommendation.vercel.app/",
-      github: "https://github.com/Anmolashish/season-based-anime-recommendation.git",
+      github:
+        "https://github.com/Anmolashish/season-based-anime-recommendation.git",
     },
     {
       id: 4,
       title: "Travel Vista",
-      description: "A dummy travel website project created during a four-week training program.",
+      description:
+        "A dummy travel website project created during a four-week training program.",
       tags: ["HTML", "CSS", "BOOTSRAP"],
-      image: "/travel-vista.png",
+      image: "/travel-vista.webp",
       link: "https://aniketsharma953.github.io/Travel-vista-/",
       github: "https://github.com/aniketsharma953/Travel-vista-.git",
     },
     {
       id: 5,
       title: "Calorie-counter",
-      description: "A practice project designed to track daily calorie intake and promote healthy eating habits",
+      description:
+        "A practice project designed to track daily calorie intake and promote healthy eating habits",
       tags: ["HTML", "CSS", "Javascript"],
-      image: "/calorie.png",
+      image: "/calorie.webp",
       link: "https://aniketsharma953.github.io/Calorie-counter/",
       github: "https://github.com/aniketsharma953/Calorie-counter.git",
     },
@@ -57,7 +62,7 @@ export default function ProjectsPage() {
       title: " Personal Portfolio",
       description: "My first portfolio website design",
       tags: ["React", "Next.js", "Tailwind CSS"],
-      image: "/portfolio.png",
+      image: "/portfolio.webp",
       link: "https://aniket-sharma-portfolio-orpin.vercel.app/",
       github: "https://github.com/aniketsharma953/Aniket-Sharma-Portfolio",
     },
@@ -65,8 +70,6 @@ export default function ProjectsPage() {
 
   return (
     <div className="min-h-screen bg-[#141516] text-white p-8">
-           
-      
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">

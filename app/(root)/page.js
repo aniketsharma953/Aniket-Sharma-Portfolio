@@ -11,22 +11,23 @@ export default function HomePage() {
       title: "Live Project",
       description: "A poetry showcase platform with interactive features ",
       tags: ["React", "Next.js", "CSS"],
-      image: "/shayari.png",
-      link: "/projects"
+      image: "/shayari.webp",
+      link: "/projects",
     },
     {
       title: "Your-Lie-In-April",
-      description: "An interactive anime music experience page created during the Hakatahon task.",
+      description:
+        "An interactive anime music experience page created during the Hakatahon task.",
       tags: ["React", "Next.js", "Tailwind CSS"],
-      image: "/your-lie-april.png",
-       link: "/projects"
+      image: "/your-lie-april.webp",
+      link: "/projects",
     },
     {
       title: "Season-Based-Anime",
       description: "A project built as the second task during the Hakatahon .",
       tags: ["React", "Next.js", "Tailwind CSS"],
-      image: "/season.png",
-       link: "/projects"
+      image: "/season.webp",
+      link: "/projects",
     },
   ];
 
@@ -72,8 +73,9 @@ export default function HomePage() {
               <div className="relative group w-64 h-64 md:w-80 md:h-80">
                 <div className="absolute inset-0 bg-[#7942C0] rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity" />
                 <img
-                  src="/aniket.jpg"
+                  src="/aniket.webp"
                   alt="Aniket Sharma"
+                  format="webp"
                   className="relative w-full h-full rounded-full object-cover border-4 border-[#7942C0] group-hover:border-white transition-all"
                 />
               </div>
@@ -91,30 +93,31 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Link key={index} href={project.link}>
-              <div
-                
-                className="bg-[#1F1F1F] rounded-xl p-6 border border-[#292A2B] hover:border-[#7942C0]/50 transition-all group overflow-hidden"
-              >
-                <div className="mb-4 h-48 bg-[#292A2B] rounded-lg overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-[#7942C0]/10 to-[#141516] flex items-center justify-center">
-                    <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                <div className="bg-[#1F1F1F] rounded-xl p-6 border border-[#292A2B] hover:border-[#7942C0]/50 transition-all group overflow-hidden">
+                  <div className="mb-4 h-48 bg-[#292A2B] rounded-lg overflow-hidden">
+                    <div className="w-full h-full bg-gradient-to-br from-[#7942C0]/10 to-[#141516] flex items-center justify-center">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-[#7942C0] transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-[#D1D1D1] mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 bg-[#292A2B] rounded-full text-sm text-[#D1D1D1]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-[#7942C0] transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-[#D1D1D1] mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1 bg-[#292A2B] rounded-full text-sm text-[#D1D1D1]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
               </Link>
             ))}
           </div>
@@ -129,10 +132,10 @@ export default function HomePage() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: "React", icon: "/react.png" },
-              { name: "Next.js", icon: "/next.png" },
-              { name: "JavaScript", icon: "/javascript.png" },
-              { name: "Tailwind", icon: "/tailwind.png" },
+              { name: "React", icon: "/react.webp" },
+              { name: "Next.js", icon: "/next.webp" },
+              { name: "JavaScript", icon: "/javascript.webp" },
+              { name: "Tailwind", icon: "/tailwind.webp" },
             ].map((skill, index) => (
               <div
                 key={index}
