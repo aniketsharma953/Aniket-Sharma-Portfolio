@@ -62,7 +62,7 @@ export default function HomePage() {
                   View My Work
                 </Link>
                 <Link
-                  href="/Resume2131267.pdf"
+                  href="/aniket sharma resume.pdf"
                   className="px-6 py-3 border border-[#7942C0] rounded-lg font-medium hover:bg-[#7942C0]/20 transition-colors"
                 >
                   Resume
